@@ -24,7 +24,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "app",
+            "prefix": "",
             "style": "kebab-case"
           }
         ],
@@ -35,7 +35,16 @@
             "prefix": "app",
             "style": "camelCase"
           }
-        ]
+        ],
+        "@typescript-eslint/naming-convention": 0,
+        "@typescript-eslint/no-inferrable-types": 0,
+        "@typescript-eslint/dot-notation": 0,
+        "no-underscore-dangle": "off",
+        "object-shorthand": "off",
+        "max-len": "off",
+        "valid-jsdoc": "off",
+        "jsdoc/newline-after-description": 0,
+        "jsdoc/no-types": 0
       }
     },
     {

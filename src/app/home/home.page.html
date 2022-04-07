@@ -7,14 +7,18 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!-- Loader during database and sdk initialization -->
+  <div class="splash-content" *ngIf="showLoader">
+    <ion-spinner name="crescent"></ion-spinner>
+    <div>
+      Loading
+      <div class="percentage" *ngIf="loading*100 > 0">{{ loading * 100 | number: '1.0-0' }}%</div>
+    </div>
+  </div>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <!-- Initializes show scan buttons -->
+  <div *ngIf="!showLoader">
+    <ion-button (click)="startScan()">OCR scan</ion-button>
+    <ion-button (click)="startScan(true)">RFID scan</ion-button>
   </div>
 </ion-content>

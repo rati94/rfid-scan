@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'com.sabeeapp.rfidscan',
   appName: 'rfid-scan',
   webDir: 'www',
   bundledWebRuntime: false

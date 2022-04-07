@@ -1,0 +1,6 @@
+{
+	"appId": "com.sabeeapp.rfidscan",
+	"appName": "rfid-scan",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
